@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+	"strings"
+)
 func main() {
 	fmt.Println("Hello, raihan")
 	//strings
@@ -91,6 +95,34 @@ func main() {
 
 	rangeOne = append(rangeOne, "koopa")
 	fmt.Println(rangeOne)
+
+	//The standard Library strings Package
+	greeting := "hello there friends!"
+
+	fmt.Println(strings.Contains(greeting,"hello"))
+	fmt.Println(strings.Contains(greeting,"hello!"))
+	fmt.Println(strings.ReplaceAll(greeting, "hello", "hi"))
+	fmt.Println(strings.ToUpper(greeting))
+	fmt.Println(strings.Index(greeting, "ll"))
+	fmt.Println(strings.Split(greeting, " "))
+
+	// the original value is unchanged
+	fmt.Println("original string value =", greeting)
+
+
+	//sort package
+	agess := []int{45,20,49, 40, 88, 90}
+	sort.Ints(agess)
+	fmt.Println(agess)
+
+	index := sort.SearchInts(agess, 40)
+	fmt.Println(index)
+
+	testNames := []string{"yoshi", "mario", "peach", "bowser", "luigi"}
+	sort.Strings(testNames)
+	fmt.Println(testNames)
+
+	fmt.Println(sort.SearchStrings(testNames,"bowser"))
 
 
 }
