@@ -125,4 +125,28 @@ func main() {
 	fmt.Println(sort.SearchStrings(testNames,"bowser"))
 
 
+	//Loop
+	x := 0
+	for x < 5 {
+		fmt.Println("value of x is:", x)
+		x++
+	}
+
+	for i := 0; i < 5; i++{
+		fmt.Println("value of i is:", i)
+	}
+
+	loopName := []string{"yoshi", "mario", "peach", "bowser", "luigi"}
+	for i := 0; i < len(loopName); i++{
+		fmt.Println(loopName[i])
+	}
+
+	for index, value := range loopName{
+		fmt.Printf("the value at index %v is %v \n",index, value)
+	}
+
+	for _, value := range loopName{
+		fmt.Printf("the value  is %v \n",value)
+	}
+
 }
