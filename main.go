@@ -39,4 +39,36 @@ func main() {
 	scoreThree := 1.5
 
 	fmt.Println(scoreOne,scoreTwo,scoreThree)
+
+	//Print 
+	fmt.Print("Hello, ")
+	fmt.Print("world! ")
+
+	//new line
+	fmt.Print("Hello, \n")
+	fmt.Print("world! \n")
+
+	//auto new line 
+	fmt.Println("Hello Raihan")
+	fmt.Println("GoogBye Raihan")
+
+	age := 25
+	name := "raihan"
+
+	fmt.Println("my age is", age, "and my name is", name)
+
+	//PrintF (formatted strings) %_ = format specifier
+	fmt.Printf("my age is %v and my name is %v \n", age, name)
+	fmt.Printf("my age is %q and my name is %q \n", age, name)
+	fmt.Printf("age is of type %T \n", age)
+	fmt.Printf("you scored %f points! \n", 222.55)
+	fmt.Printf("you scored %0.1f points! \n", 222.55)
+
+	//sprintf (save formatted strings)
+	var str = fmt.Sprintf("my age is %v and my name is %v \n", age, name)
+	fmt.Println("the saved string is:", str)
+
+
+
+
 }
